@@ -27,5 +27,7 @@ const applicationHTML = `
 </article>
 `
 
+testing
+
 mainContainer.innerHTML = applicationHTML
 
