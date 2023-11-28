@@ -4,10 +4,11 @@ const walkers = getWalkers()
 
 
 export const CityList = () => {
-    let citiesHTML = `<ol>`
+    let citiesHTML = ""
+    citiesHTML =  `<ol>`
 
     for (const walker of walkers) {
-        citiesHTML += `<li>${walkers.city}</li>`
+        citiesHTML += `<li>${walker.city}</li>`
     }
 
     citiesHTML += `</ol>`

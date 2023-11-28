@@ -1,4 +1,4 @@
-import { Walkers } from "./Walkers.js"
+import { walkers } from "./Walkers.js"
 import { CityList } from "./CityList.js"
 import { Assignments } from "./Assignments.js"
 import { RegisteredPets } from "./RegisteredPets.js"
@@ -14,10 +14,11 @@ const applicationHTML = `
     </section>
     <section class="detail--column list details__cities">
         <h2>Walkers</h2>
-        ${Walkers()}
+        ${walkers()}
     </section>
     <section class="detail--column list details__cities">
         <h2>Pets</h2>
+        ${RegisteredPets()}
     </section>
 </article>
 
@@ -27,7 +28,7 @@ const applicationHTML = `
 </article>
 `
 
-testing
+
 
 mainContainer.innerHTML = applicationHTML
 
